@@ -30,7 +30,7 @@ test:
     preTest:
       commands:
         - yarn install
-        - yarn install mocha mochawesome mochawesome-merge mochawesome-report-generator
+        - yarn add mocha mochawesome mochawesome-merge mochawesome-report-generator
     test:
       commands:
         - 'npx cypress run --reporter mochawesome --reporter-options "reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss"'
